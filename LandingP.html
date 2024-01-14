@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        body{
+            background-color: rgb(236, 247, 247);
+        }
+
+        h2{
+            font-family: Bungee Spice;
+            font-size: 50px;
+            font-weight: 200;
+            color: rgb(247, 228, 222);
+        
+        }
+
+        .navbar{
+            background-color: rgb(66 140 167);
+            margin:2px black;
+            border-radius:29px;
+        }
+
+        .navbar ul{
+            overflow:auto;
+        }
+
+        .navbar li{
+            float:left;
+            list-style: none;
+            padding:9px 20px;
+        }
+
+        .navbar li a{
+            padding 3px 3px;
+            text-decoration:none;
+            color:white;
+        }
+
+        .navbar li a:hover{
+            color:black;
+        }
+
+        .search{
+            float:right;
+            color:white;
+            padding: 9px 20px;
+        }
+
+        .navbar input{
+            border:2px solid black;
+            border-radius:20px;
+            padding:3px 10px;
+            width: 140px;
+        }
+
+        body{
+            background-color: rgb(0, 0, 0);
+            background-image: url('noodle.webp');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* img{
+            float:right;
+            width: 400px;
+            padding-right: 9%;
+            padding-bottom: 5%;
+            padding-top: 0%;
+        
+        } */
+        
+        .container{
+            border:2px solid rgb(25, 22, 22);
+            background-color:rgb(80, 76, 73);
+            padding:34px;
+            margin:3px ;
+            width:450px;
+            height: 250px;
+
+            h3{
+                color: rgb(66 140 167);
+                border: 50px black;
+            }
+        }
+
+        .btn{
+            font-family:monospace;
+            border:2px solid rgb(245, 242, 242);
+            background-color:rgb(31, 198, 231);
+            padding:3px;
+            margin:3px;
+            width:90px;
+            cursor:pointer;
+            font-size:14px ;
+            border-radius:4px;
+        }
+
+        .btn:hover{
+            color:rgb(41, 16, 224);
+            background-color:white;
+        }
+
+        a{
+            text-decoration: none;
+            color:black;
+        }
+
+        a:hover{
+            color:rgb(31, 198, 231);
+            background-color:white;
+        }
+
+        /* Agar link active hai toh */
+
+        a:visited{
+            color:black;
+        }
+
+        a:active{
+            background-color: blueviolet;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">About</a></li>
+                <div class="search"> <input type="text" name="search" id="search" placeholder="search here"></div>
+            </ul>
+        </nav>
+    </header>
+
+    <h2>Noodle House</h2>
+    <!-- <img src="https://i.pinimg.com/564x/00/73/5b/00735b6be20a605d5c0a63269408f0aa.jpg"> -->
+    <!-- <img src="https://i.pinimg.com/564x/55/83/f1/5583f18490f4b8e7fea748200bc82c85.jpg"> -->
+
+    <div class="container" id="cont1">
+        <h3>Enjoy Your Tasty Noodle</h3>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem officia pariatur, neque ratione quaerat nam autem beatae, esse consequatur ipsum a temporibus reiciendis quisquam quasi. Voluptate alias iusto sed dolorem eveniet earum fugiat consequuntur.</p>
+        <br>
+        <a href="https://google.com" class="btn">Read more</a>
+        <button class="btn">Contact us</button>
+    </div>
+</body>
+</html>

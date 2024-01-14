@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,500&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color:rgb(28, 16, 36);
+            color:white;
+            font-family: font-family: 'Poppins', sans-serif;;
+        }
+        *{
+            margin:0;
+            padding:0px;
+        }
+        img{
+            overflow-clip-margin: content-box;
+            overflow: clip;
+        }
+        nav{
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+            height:100px;
+            background-color: rgb(58, 31, 83);
+            
+        }
+        nav ul{
+            display:flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style:none;
+            margin:0px 23px;
+            
+        }
+
+        nav ul li a{
+            text-decoration:none;
+            color:rgb(240, 145, 240);
+            font-size: 18px;
+            
+        }
+        nav ul li a:hover{
+            text-decoration:none;
+            color:rgb(240, 233, 240);
+            
+        }
+
+        .left{
+            font-size: 30px;
+        }
+        .right{
+            font-size: 15px;
+            font-weight: 100;
+
+        }
+
+        .firstSection{
+            display:flex;
+            justify-content:space-around;
+            margin:23px;
+        }
+
+        .leftSection{
+            font-size : 3rem;
+            padding-top: 100px;
+        }
+
+        .rightSection img{
+            width:300px;
+            height:300px;
+        }
+        .color{
+            color:rgb(232, 110, 239);
+        }
+        .secondSection{
+            margin:auto;
+            height:80vh;
+            max-width:80vw;
+
+        }
+        .secondSection .box{
+            background:white;
+            width:80vw;
+            height:0.1px;
+            margin:40px 0;
+        }
+        h1:hover{
+            color:blueviolet;
+
+        }
+        .g{
+            color:gray;
+        }
+        .footer{
+            display:flex;
+            padding:23px 122px;
+        }
+        footer{
+            background-color:rgb(30, 4, 55);
+            height:233px;
+        }
+        .leftSection .btn{
+            padding:8px;
+            border-radius: 4px;
+            border: white solid 2px ;
+            background-color: rgb(58, 31, 83);
+            color:white;
+        }
+
+        .leftSection .btn:hover{
+            background-color: rgb(232, 110, 239);
+        }
+
+         /* body {
+            font-family: 'Arial', sans-serif;
+            /* margin: 3px;
+            padding: 0px; */
+            /* display: flex; */
+            /* justify-content: left; */
+            /* align-items: center; */
+            /* height: 10vh; */
+        } */
+
+
+    .skill {
+        margin-bottom: 15px;
+    }
+
+    .skill-label {
+        color: #ede8e8;
+    }
+
+    .progress-bar {
+        background-color: #f0f0f0;
+        height: 20px;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    .python {
+        display: block;
+        height: 100%;
+        background-color: #4CAF50; 
+        color: rgb(9, 9, 9);
+        text-align: center;
+        line-height: 20px;
+        border-radius: 10px;
+    }
+
+    .java {
+        display: block;
+        height: 100%;
+        background-color: #3498db; 
+        color: rgb(9, 9, 9);
+        text-align: center;
+        line-height: 20px;
+        border-radius: 10px;
+    }
+
+    .oops {
+        display: block;
+        height: 100%;
+        background-color: #6b41f5; 
+        color: rgb(9, 9, 9);
+        text-align: center;
+        line-height: 20px;
+        border-radius: 10px;
+    }
+
+    .DSA {
+        display: block;
+        height: 100%;
+        background-color: #9b59b6; 
+        color: rgb(9, 9, 9);
+        text-align: center;
+        line-height: 20px;
+        border-radius: 10px;
+    }
+
+    .HTML {
+        display: block;
+        height: 100%;
+        background-color: #e74c3c; 
+        color: rgb(9, 9, 9);
+        text-align: center;
+        line-height: 20px;
+        border-radius: 10px;
+    }
+
+    .CSS {
+        display: block;
+        height: 100%;
+        background-color: #88f3c1; 
+        color: rgb(9, 9, 9);
+        text-align: center;
+        line-height: 20px;
+        border-radius: 10px;
+    }
+
+    .JavaScript{
+        display: block;
+        height: 100%;
+        background-color: #f39c12; 
+        color: rgb(9, 9, 9);
+        text-align: center;
+        line-height: 20px;
+        border-radius: 10px;
+    }
+    .footer-second img{
+        height:40px;
+        width: 40px;
+        padding-top: 100px;
+        margin:15px;
+        
+    }
+    .footer-second img:hover{
+        filter:brightness(55%)   
+    }
+    .footer-Third img{
+        height:40px;
+        width: 40px;
+        padding-top: 100px;
+        margin:15px;
+    }
+    .footer-Third img:hover{
+        filter:brightness(55%)   
+    }
+
+    .footer-fourth img{
+        height:40px;
+        width: 40px;
+        padding-top: 100px;
+        margin:15px;
+    }
+    .footer-fourth img:hover{
+        filter:brightness(55%)   
+    }
+
+    .footer-right{
+        display:flex;
+            justify-content:space-around;
+            margin-left:500px;
+            margin-top:100px;
+    }
+
+
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Ketaki Kahure</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact Me</a></li>
+                    <li><a href="#">Projects</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">Hi , My name is<span class="color"> Ketaki</span>
+                <br>
+                <br>
+                <div>I am a Web Developer</div>
+                <button type= submit class="btn" onclick="window.open('Resume2.pdf');return true;">download resume</button>
+                <button type= submit class="btn" onclick="window.open('https://github.com/KetakiKahure/CODSOFT.git');return true;"> Visite Github </button>
+            </div>
+            <div class="rightSection"><img src="portfolioimg.jpg" alt=""style="padding-top: 50px"></div>
+        </section>
+        <hr>
+        <br>
+        <section class="secondSection">
+            <span class="g">What I have done so far</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+
+                <div class="skills-container">
+
+                    <div class="skill">
+                        <div class="skill-label">Java</div>
+                        <div class="progress-bar">
+                            <span class="java" style="width: 95%;">95%</span>
+                        </div>
+                    </div>
+            
+                    <div class="skill">
+                        <div class="skill-label">Python</div>
+                        <div class="progress-bar">
+                            <span class="python" style="width: 90%;">90%</span>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-label">oops</div>
+                        <div class="progress-bar">
+                            <span class="oops" style="width: 95%;">95%</span>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-label">DSA</div>
+                        <div class="progress-bar">
+                            <span class="DSA" style="width: 87%;">87%</span>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-label">HTML</div>
+                        <div class="progress-bar">
+                            <span class="HTML" style="width: 85%;">85%</span>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-label">CSS</div>
+                        <div class="progress-bar">
+                            <span class="CSS" style="width: 77%;">77%</span>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-label">JavaScript</div>
+                        <div class="progress-bar">
+                            <span class="JavaScript" style="width: 55%;">55%</span>
+                        </div>
+                    </div>
+            
+                    <!-- Add similar blocks for other skills -->
+            
+                </div>
+
+            </div>
+            
+
+        </section>
+
+        <footer>
+            <div class="footer">
+                <div class="footer-first"><h3>Ketaki's Portfolio</h3></div>
+                <div class="footer-second">
+                    <a href="https://github.com/KetakiKahure/CODSOFT.git" target="_blank"><img src="githublogo1.png"> </a>
+                </div>
+                
+                <div class="footer-Third">
+                    <a href="https://www.linkedin.com/in/ketaki-kahure-ab5049256?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BnaUHWvX9S6yeVh8ebikCNw%3D%3D" target="_blank"><img src=" linkedin-icon_488108-5.avif"> </a>
+                </div>
+                <div class="footer-fourth">
+                    <a href="mailto:ketaki.22bce7482@vitapstudent.ac.in" target="_blank">
+                    <img src="images.png"></a>
+                </div>
+                <div class="footer-right">
+                    Address:Maharashtra Pune;
+                    <br>
+                    Contact No:92xxxxxxxx;
+
+                </div>
+            </div>
+        </footer>
+    </main>
+    
+</body>
+</html>
